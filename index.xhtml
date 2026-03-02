@@ -344,30 +344,30 @@
         </button>
     </div>
 
-    <section class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 overflow-hidden pt-20 md:pt-0">
         <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-pulse-slow"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-indigo-600/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto text-center">
-            <div class="mb-6 inline-block">
-                <span class="px-4 py-2 rounded-full border border-white/10 text-sm text-gray-400 bg-white/5 backdrop-blur-sm">
+        <div class="relative z-10 max-w-7xl mx-auto text-center w-full">
+            <div class="mb-4 sm:mb-6 inline-block">
+                <span class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/10 text-xs sm:text-sm text-gray-400 bg-white/5 backdrop-blur-sm">
                     BSIT Student at LSPU | 3rd Year
                 </span>
             </div>
             
-            <h1 class="text-5xl md:text-7xl lg:text-9xl font-display font-bold leading-tight mb-8">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-bold leading-tight mb-6 sm:mb-8 md:mb-10">
                 Web<br />
                 <span class="gradient-text">Developer</span>
             </h1>
             
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed px-2">
                 I enjoy building modern web applications from interface to backend logic, with a focus on readable code, clean layouts, and smooth user experience.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#work" class="magnetic-btn px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-300 flex items-center gap-2">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-2">
+                <a href="#work" class="magnetic-btn px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-full font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
                     View My Projects
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
@@ -383,23 +383,23 @@
         </div>
     </section>
 
-    <section id="about" class="py-20 px-6">
+    <section id="about" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
                 <div class="relative">
-                    <div class="aspect-[3/4] rounded-2xl overflow-hidden">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden max-w-xs sm:max-w-sm md:max-w-none mx-auto">
                         <img id="profileSlideshow" src="pic/Profilepic.jpg" alt="Zack's Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" onclick="openImageModal(this)" />
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-indigo-600/20 rounded-full blur-3xl"></div>
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-purple-600/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-32 sm:w-48 h-32 sm:h-48 bg-indigo-600/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-24 sm:w-32 h-24 sm:h-32 bg-purple-600/20 rounded-full blur-2xl"></div>
                 </div>
 
                 <div>
-                    <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">About Me</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                    <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-3 sm:mb-4">About Me</h2>
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
                         Hey, I'm Zack!
                     </h3>
-                    <div class="space-y-4 text-gray-400 leading-relaxed mb-8">
+                    <div class="space-y-3 sm:space-y-4 text-gray-400 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
                         <p>
                             I'm a 3rd year BSIT student at LSPU, and I love building websites and web applications. I enjoy the process of turning ideas into real, working projects - from designing the interface to writing the backend logic.
                         </p>
@@ -411,26 +411,26 @@
                         </p>
                     </div>
 
-                    <div class="mb-8">
-                        <h4 class="text-xl font-display font-bold mb-4">Hobbies</h4>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10">Reading Manga</span>
-                            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10">Reading Manhwa</span>
-                            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10">Watching Anime</span>
-                            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10">Gaming</span>
+                    <div class="mb-6 sm:mb-8">
+                        <h4 class="text-lg sm:text-xl font-display font-bold mb-3 sm:mb-4">Hobbies</h4>
+                        <div class="flex flex-wrap gap-2 sm:gap-3">
+                            <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-full text-xs sm:text-sm text-gray-300 border border-white/10">Reading Manga</span>
+                            <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-full text-xs sm:text-sm text-gray-300 border border-white/10">Reading Manhwa</span>
+                            <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-full text-xs sm:text-sm text-gray-300 border border-white/10">Watching Anime</span>
+                            <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-full text-xs sm:text-sm text-gray-300 border border-white/10">Gaming</span>
                         </div>
                     </div>
 
-                    <div class="glass-card p-6 rounded-2xl">
-                        <h4 class="text-xl font-display font-bold mb-4">Fun Facts</h4>
-                        <ul class="space-y-2 text-gray-400">
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl">
+                        <h4 class="text-lg sm:text-xl font-display font-bold mb-3 sm:mb-4">Fun Facts</h4>
+                        <ul class="space-y-1.5 sm:space-y-2 text-gray-400 text-sm sm:text-base">
                             <li>✨ I am a huge gamer</li>
                             <li>✨ I get ultra-competitive in Valorant</li>
                             <li>✨ I enjoy learning by building real projects</li>
                             <li>✨ I like balancing clean UI with backend logic</li>
                         </ul>
-                        <div class="mt-4 p-3 bg-white/5 rounded-xl border border-white/10">
-                            <p class="text-gray-300 italic">"it is what it is"</p>
+                        <div class="mt-3 sm:mt-4 p-2.5 sm:p-3 bg-white/5 rounded-xl border border-white/10">
+                            <p class="text-gray-300 italic text-xs sm:text-sm">"it is what it is"</p>
                         </div>
                     </div>
                 </div>
@@ -438,17 +438,17 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 px-6 bg-darker">
+    <section id="skills" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-darker">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">My Skills</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-bold mb-6">Skills</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-2 sm:mb-4">My Skills</h2>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">Skills</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                     Technologies I work with to build modern web applications.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div class="glass-card p-8 rounded-2xl">
                     <h4 class="text-xl font-display font-bold mb-6 text-indigo-400">Frontend</h4>
                     <div class="flex flex-wrap gap-3">
@@ -470,261 +470,261 @@
         </div>
     </section>
 
-    <section id="work" class="py-20 px-6">
+    <section id="work" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 gap-4 sm:gap-6">
                 <div>
-                    <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">Selected Work</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-bold">Featured<br />Projects</h3>
+                    <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-2 sm:mb-4">Selected Work</h2>
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight">Featured<br />Projects</h3>
                 </div>
-                <p class="text-gray-400 max-w-md">
+                <p class="text-gray-400 max-w-md text-sm sm:text-base">
                     Check out my recent projects that showcase my skills in web development.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div class="project-card group relative overflow-hidden rounded-2xl cursor-pointer">
-                    <div class="aspect-[4/3] overflow-hidden bg-gray-900">
+                    <div class="aspect-[4/3] overflow-hidden bg-gray-900 w-full">
                         <img src="pic/mywork clinic.png" alt="LSPU Clinic System" class="w-full h-full object-cover transition-transform duration-700 cursor-pointer" onclick="openImageModal(this)" />
                     </div>
-                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
-                        <span class="text-indigo-400 text-sm font-semibold mb-2">PHP / MySQL / Bootstrap</span>
-                        <h4 class="text-2xl font-display font-bold mb-2">LSPU Clinic System</h4>
-                        <p class="text-gray-300 text-sm">Clinic records, schedules, and staff workflow in one campus portal</p>
+                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                        <span class="text-indigo-400 text-xs sm:text-sm font-semibold mb-1 sm:mb-2">PHP / MySQL / Bootstrap</span>
+                        <h4 class="text-lg sm:text-2xl font-display font-bold mb-1 sm:mb-2">LSPU Clinic System</h4>
+                        <p class="text-gray-300 text-xs sm:text-sm">Clinic records, schedules, and staff workflow in one campus portal</p>
                     </div>
                 </div>
 
                 <div class="project-card group relative overflow-hidden rounded-2xl cursor-pointer mt-0 md:mt-12">
-                    <div class="aspect-[4/3] overflow-hidden bg-gray-900">
+                    <div class="aspect-[4/3] overflow-hidden bg-gray-900 w-full">
                         <img src="pic/mywork logistic.png" alt="Delivery Management Platform" class="w-full h-full object-cover transition-transform duration-700 cursor-pointer" onclick="openImageModal(this)" />
                     </div>
-                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
-                        <span class="text-indigo-400 text-sm font-semibold mb-2">JavaScript / PHP / MySQL</span>
-                        <h4 class="text-2xl font-display font-bold mb-2">Delivery Management Platform</h4>
-                        <p class="text-gray-300 text-sm">Role-based tracking for customers, owners, and drivers</p>
+                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                        <span class="text-indigo-400 text-xs sm:text-sm font-semibold mb-1 sm:mb-2">JavaScript / PHP / MySQL</span>
+                        <h4 class="text-lg sm:text-2xl font-display font-bold mb-1 sm:mb-2">Delivery Management Platform</h4>
+                        <p class="text-gray-300 text-xs sm:text-sm">Role-based tracking for customers, owners, and drivers</p>
                     </div>
                 </div>
 
                 <div class="project-card group relative overflow-hidden rounded-2xl cursor-pointer">
-                    <div class="aspect-[4/3] overflow-hidden bg-gray-900">
+                    <div class="aspect-[4/3] overflow-hidden bg-gray-900 w-full">
                         <img src="pic/mywork wavedeff.png" alt="Asteroid-Empire Game" class="w-full h-full object-cover transition-transform duration-700 cursor-pointer" onclick="openImageModal(this)" />
                     </div>
-                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
-                        <span class="text-indigo-400 text-sm font-semibold mb-2">JavaScript / Game Logic</span>
-                        <h4 class="text-2xl font-display font-bold mb-2">Asteroid-Empire</h4>
-                        <p class="text-gray-300 text-sm">Browser wave-defense game with weapon selection</p>
+                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                        <span class="text-indigo-400 text-xs sm:text-sm font-semibold mb-1 sm:mb-2">JavaScript / Game Logic</span>
+                        <h4 class="text-lg sm:text-2xl font-display font-bold mb-1 sm:mb-2">Asteroid-Empire</h4>
+                        <p class="text-gray-300 text-xs sm:text-sm">Browser wave-defense game with weapon selection</p>
                     </div>
                 </div>
 
                 <div class="project-card group relative overflow-hidden rounded-2xl cursor-pointer mt-0 md:mt-12">
-                    <div class="aspect-[4/3] overflow-hidden bg-gray-900">
+                    <div class="aspect-[4/3] overflow-hidden bg-gray-900 w-full">
                         <img src="pic/mywork claim pass.png" alt="Claim Your Pass Parody Website" class="w-full h-full object-cover transition-transform duration-700 cursor-pointer" onclick="openImageModal(this)" />
                     </div>
-                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
-                        <span class="text-indigo-400 text-sm font-semibold mb-2">HTML / CSS / Creative</span>
-                        <h4 class="text-2xl font-display font-bold mb-2">Claim Your Pass</h4>
-                        <p class="text-gray-300 text-sm">Parody landing page with exaggerated visual style</p>
+                    <div class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                        <span class="text-indigo-400 text-xs sm:text-sm font-semibold mb-1 sm:mb-2">HTML / CSS / Creative</span>
+                        <h4 class="text-lg sm:text-2xl font-display font-bold mb-1 sm:mb-2">Claim Your Pass</h4>
+                        <p class="text-gray-300 text-xs sm:text-sm">Parody landing page with exaggerated visual style</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="family" class="py-20 px-6">
+    <section id="family" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">Personal</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-bold mb-6">Family &amp; More</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-2 sm:mb-4">Personal</h2>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">Family &amp; More</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                     Here's more about me outside of coding!
                 </p>
             </div>
 
-            <div class="mb-12">
-                <h4 class="text-2xl font-display font-bold mb-6">Games I Like</h4>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="glass-card p-6 rounded-2xl flex items-center gap-4">
-                        <img src="pic/gamesiplayed.png" alt="Honkai Star Rail" class="w-16 h-16 rounded-lg object-cover cursor-pointer" onclick="openImageModal(this)" />
-                        <div>
-                            <h5 class="font-bold">Honkai Star Rail</h5>
-                            <p class="text-sm text-gray-400">Gacha RPG</p>
+            <div class="mb-8 sm:mb-12">
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Games I Like</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl flex items-center gap-3 sm:gap-4">
+                        <img src="pic/gamesiplayed.png" alt="Honkai Star Rail" class="w-14 sm:w-16 h-14 sm:h-16 rounded-lg object-cover flex-shrink-0 cursor-pointer" onclick="openImageModal(this)" />
+                        <div class="min-w-0">
+                            <h5 class="font-bold text-sm sm:text-base">Honkai Star Rail</h5>
+                            <p class="text-xs sm:text-sm text-gray-400">Gacha RPG</p>
                         </div>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl flex items-center gap-4">
-                        <img src="pic/gamesiplayed2.png" alt="Valorant" class="w-16 h-16 rounded-lg object-cover cursor-pointer" onclick="openImageModal(this)" />
-                        <div>
-                            <h5 class="font-bold">Valorant</h5>
-                            <p class="text-sm text-gray-400">FPS Shooter</p>
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl flex items-center gap-3 sm:gap-4">
+                        <img src="pic/gamesiplayed2.png" alt="Valorant" class="w-14 sm:w-16 h-14 sm:h-16 rounded-lg object-cover flex-shrink-0 cursor-pointer" onclick="openImageModal(this)" />
+                        <div class="min-w-0">
+                            <h5 class="font-bold text-sm sm:text-base">Valorant</h5>
+                            <p class="text-xs sm:text-sm text-gray-400">FPS Shooter</p>
                         </div>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl flex items-center gap-4">
-                        <img src="pic/gamesiplayed3.png" alt="Minecraft" class="w-16 h-16 rounded-lg object-cover cursor-pointer" onclick="openImageModal(this)" />
-                        <div>
-                            <h5 class="font-bold">Minecraft</h5>
-                            <p class="text-sm text-gray-400">Sandbox Game</p>
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl flex items-center gap-3 sm:gap-4 sm:col-span-2 md:col-span-1">
+                        <img src="pic/gamesiplayed3.png" alt="Minecraft" class="w-14 sm:w-16 h-14 sm:h-16 rounded-lg object-cover flex-shrink-0 cursor-pointer" onclick="openImageModal(this)" />
+                        <div class="min-w-0">
+                            <h5 class="font-bold text-sm sm:text-base">Minecraft</h5>
+                            <p class="text-xs sm:text-sm text-gray-400">Sandbox Game</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mb-12">
-                <h4 class="text-2xl font-display font-bold mb-6">Family Photos</h4>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="glass-card p-4 rounded-2xl">
-                        <img src="pic/mompic.jpg" alt="Mom" class="w-full h-48 object-cover rounded-xl mb-3 cursor-pointer" onclick="openImageModal(this)" />
-                        <p class="text-center text-gray-400">My Mom</p>
+            <div class="mb-8 sm:mb-12">
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Family Photos</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="glass-card p-3 sm:p-4 rounded-2xl">
+                        <img src="pic/mompic.jpg" alt="Mom" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-2 sm:mb-3 cursor-pointer" onclick="openImageModal(this)" />
+                        <p class="text-center text-gray-400 text-sm">My Mom</p>
                     </div>
-                    <div class="glass-card p-4 rounded-2xl">
-                        <img src="pic/grandma.jpg" alt="Grandma" class="w-full h-48 object-cover rounded-xl mb-3 cursor-pointer" onclick="openImageModal(this)" />
-                        <p class="text-center text-gray-400">My Grandma</p>
+                    <div class="glass-card p-3 sm:p-4 rounded-2xl">
+                        <img src="pic/grandma.jpg" alt="Grandma" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-2 sm:mb-3 cursor-pointer" onclick="openImageModal(this)" />
+                        <p class="text-center text-gray-400 text-sm">My Grandma</p>
                     </div>
-                    <div class="glass-card p-4 rounded-2xl">
-                        <img src="pic/FAmpic6.jpg" alt="Family" class="w-full h-48 object-cover rounded-xl mb-3 cursor-pointer" onclick="openImageModal(this)" />
-                        <p class="text-center text-gray-400">Family</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-12">
-                <h4 class="text-2xl font-display font-bold mb-6">Cousins</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="glass-card p-4 rounded-2xl">
-                        <img src="pic/cousins.jpg" alt="Cousins" class="w-full h-64 object-cover rounded-xl mb-3 cursor-pointer" onclick="openImageModal(this)" />
-                        <p class="text-center text-gray-400">My Cousins</p>
-                    </div>
-                    <div class="glass-card p-4 rounded-2xl">
-                        <img src="pic/cousinsfam.jpg" alt="Cousins Family" class="w-full h-64 object-cover rounded-xl mb-3 cursor-pointer" onclick="openImageModal(this)" />
-                        <p class="text-center text-gray-400">Cousins &amp; Family</p>
+                    <div class="glass-card p-3 sm:p-4 rounded-2xl sm:col-span-2 md:col-span-1">
+                        <img src="pic/FAmpic6.jpg" alt="Family" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-2 sm:mb-3 cursor-pointer" onclick="openImageModal(this)" />
+                        <p class="text-center text-gray-400 text-sm">Family</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mb-12">
-                <h4 class="text-2xl font-display font-bold mb-6">Childhood Memories</h4>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <img src="pic/mykidpics.jpg" alt="Kid pics 1" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
-                    <img src="pic/mykidpics2.jpg" alt="Kid pics 2" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
-                    <img src="pic/mykidpics3.jpg" alt="Kid pics 3" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
-                    <img src="pic/fampic4.jpg" alt="Kid pics 4" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
-                    <img src="pic/fampic5.jpg" alt="Kid pics 5" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
-                    <img src="pic/mykidpic6.jpg" alt="Kid pics 6" class="w-full h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+            <div class="mb-8 sm:mb-12">
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Cousins</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                    <div class="glass-card p-3 sm:p-4 rounded-2xl">
+                        <img src="pic/cousins.jpg" alt="Cousins" class="w-full h-32 sm:h-48 md:h-64 object-cover rounded-xl mb-2 sm:mb-3 cursor-pointer" onclick="openImageModal(this)" />
+                        <p class="text-center text-gray-400 text-sm">My Cousins</p>
+                    </div>
+                    <div class="glass-card p-3 sm:p-4 rounded-2xl">
+                        <img src="pic/cousinsfam.jpg" alt="Cousins Family" class="w-full h-32 sm:h-48 md:h-64 object-cover rounded-xl mb-2 sm:mb-3 cursor-pointer" onclick="openImageModal(this)" />
+                        <p class="text-center text-gray-400 text-sm">Cousins &amp; Family</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8 sm:mb-12">
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Childhood Memories</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
+                    <img src="pic/mykidpics.jpg" alt="Kid pics 1" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+                    <img src="pic/mykidpics2.jpg" alt="Kid pics 2" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+                    <img src="pic/mykidpics3.jpg" alt="Kid pics 3" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+                    <img src="pic/fampic4.jpg" alt="Kid pics 4" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+                    <img src="pic/fampic5.jpg" alt="Kid pics 5" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
+                    <img src="pic/mykidpic6.jpg" alt="Kid pics 6" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl cursor-pointer" onclick="openImageModal(this)" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="anime" class="py-20 px-6 bg-darker">
+    <section id="anime" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-darker">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">Entertainment</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-bold mb-6">Anime &amp; Manga</h3>
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-2 sm:mb-4">Entertainment</h2>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">Anime &amp; Manga</h3>
             </div>
 
-            <div class="mb-12">
-                <h4 class="text-2xl font-display font-bold mb-6">Favorite Anime</h4>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="glass-card p-6 rounded-2xl">
-                        <img src="pic/naruto.jpg" alt="Naruto" class="w-full h-48 object-cover rounded-xl mb-4 cursor-pointer" onclick="openImageModal(this)" />
-                        <h5 class="font-bold text-lg">Naruto</h5>
-                        <p class="text-sm text-gray-400">Episode 86!</p>
+            <div class="mb-8 sm:mb-12">
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Favorite Anime</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl">
+                        <img src="pic/naruto.jpg" alt="Naruto" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-3 sm:mb-4 cursor-pointer" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-base sm:text-lg">Naruto</h5>
+                        <p class="text-xs sm:text-sm text-gray-400">Episode 86!</p>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl">
-                        <img src="pic/Code_Geass_R1_box_set_cover.jpg" alt="Code Geass" class="w-full h-48 object-cover rounded-xl mb-4 cursor-pointer" onclick="openImageModal(this)" />
-                        <h5 class="font-bold text-lg">Code Geass</h5>
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl">
+                        <img src="pic/Code_Geass_R1_box_set_cover.jpg" alt="Code Geass" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-3 sm:mb-4 cursor-pointer" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-base sm:text-lg">Code Geass</h5>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl">
-                        <img src="pic/The Apothecary Diaries.jpg" alt="The Apothecary Diaries" class="w-full h-48 object-cover rounded-xl mb-4 cursor-pointer" onclick="openImageModal(this)" />
-                        <h5 class="font-bold text-lg">The Apothecary Diaries</h5>
+                    <div class="glass-card p-4 sm:p-6 rounded-2xl sm:col-span-2 md:col-span-1">
+                        <img src="pic/The Apothecary Diaries.jpg" alt="The Apothecary Diaries" class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl mb-3 sm:mb-4 cursor-pointer" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-base sm:text-lg">The Apothecary Diaries</h5>
                     </div>
                 </div>
             </div>
 
             <div>
-                <h4 class="text-2xl font-display font-bold mb-6">Favorite Manga / Manhwa</h4>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="glass-card p-6 rounded-2xl text-center">
-                        <img src="pic/tokyo Ghoul.png" alt="Tokyo Ghoul" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
-                        <h5 class="font-bold">Tokyo Ghoul</h5>
+                <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6">Favorite Manga / Manhwa</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+                    <div class="glass-card p-3 sm:p-6 rounded-2xl text-center">
+                        <img src="pic/tokyo Ghoul.png" alt="Tokyo Ghoul" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl mb-2 sm:mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-xs sm:text-sm md:text-base">Tokyo Ghoul</h5>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl text-center">
-                        <img src="pic/Eleceed.png" alt="Eleceed" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
-                        <h5 class="font-bold">Eleceed</h5>
+                    <div class="glass-card p-3 sm:p-6 rounded-2xl text-center">
+                        <img src="pic/Eleceed.png" alt="Eleceed" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl mb-2 sm:mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-xs sm:text-sm md:text-base">Eleceed</h5>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl text-center">
-                        <img src="pic/greatest estate.png" alt="The Great Estate" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
-                        <h5 class="font-bold">The Great Estate</h5>
+                    <div class="glass-card p-3 sm:p-6 rounded-2xl text-center">
+                        <img src="pic/greatest estate.png" alt="The Great Estate" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl mb-2 sm:mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-xs sm:text-sm md:text-base">The Great Estate</h5>
                     </div>
-                    <div class="glass-card p-6 rounded-2xl text-center">
-                        <img src="pic/Pick Me Up!.png" alt="Pick Me Up" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
-                        <h5 class="font-bold">Pick Me Up!</h5>
+                    <div class="glass-card p-3 sm:p-6 rounded-2xl text-center">
+                        <img src="pic/Pick Me Up!.png" alt="Pick Me Up" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-xl mb-2 sm:mb-4 cursor-pointer mx-auto" onclick="openImageModal(this)" />
+                        <h5 class="font-bold text-xs sm:text-sm md:text-base">Pick Me Up!</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 bg-darker">
+    <section id="contact" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-darker">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-4">Get In Touch</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-bold mb-6">Contact Me</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-xs sm:text-sm font-semibold text-indigo-500 uppercase tracking-wider mb-2 sm:mb-4">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">Contact Me</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                     Feel free to reach out for collaborations or just a chat!
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                 <!-- Email -->
-                <a href="mailto:zackroberteileen@gmail.com" class="glass-card p-8 rounded-2xl flex items-center gap-6 hover:bg-white/5 transition-all group">
-                    <div class="w-16 h-16 rounded-full bg-indigo-600/20 flex items-center justify-center group-hover:bg-indigo-600/40 transition-all">
-                        <i class="fas fa-envelope text-2xl text-indigo-400"></i>
+                <a href="mailto:zackroberteileen@gmail.com" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
+                    <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-indigo-600/20 flex items-center justify-center group-hover:bg-indigo-600/40 transition-all flex-shrink-0">
+                        <i class="fas fa-envelope text-lg sm:text-xl md:text-2xl text-indigo-400"></i>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-display font-bold mb-1">Email</h4>
-                        <p class="text-gray-400">zackroberteileen@gmail.com</p>
+                    <div class="min-w-0">
+                        <h4 class="text-base sm:text-lg md:text-xl font-display font-bold mb-1">Email</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm break-all">zackroberteileen@gmail.com</p>
                     </div>
                 </a>
 
                 <!-- GitHub -->
-                <a href="https://github.com/Shirakawa69" target="_blank" class="glass-card p-8 rounded-2xl flex items-center gap-6 hover:bg-white/5 transition-all group">
-                    <div class="w-16 h-16 rounded-full bg-gray-800/50 flex items-center justify-center group-hover:bg-gray-800 transition-all">
-                        <i class="fab fa-github text-2xl text-white"></i>
+                <a href="https://github.com/Shirakawa69" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
+                    <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-gray-800/50 flex items-center justify-center group-hover:bg-gray-800 transition-all flex-shrink-0">
+                        <i class="fab fa-github text-lg sm:text-xl md:text-2xl text-white"></i>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-display font-bold mb-1">GitHub</h4>
-                        <p class="text-gray-400">github.com/Shirakawa69</p>
+                    <div class="min-w-0">
+                        <h4 class="text-base sm:text-lg md:text-xl font-display font-bold mb-1">GitHub</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm">github.com/Shirakawa69</p>
                     </div>
                 </a>
 
                 <!-- Facebook -->
-                <a href="https://www.facebook.com/Zackyplays" target="_blank" class="glass-card p-8 rounded-2xl flex items-center gap-6 hover:bg-white/5 transition-all group">
-                    <div class="w-16 h-16 rounded-full bg-blue-600/20 flex items-center justify-center group-hover:bg-blue-600/40 transition-all">
-                        <i class="fab fa-facebook text-2xl text-blue-400"></i>
+                <a href="https://www.facebook.com/Zackyplays" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
+                    <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-blue-600/20 flex items-center justify-center group-hover:bg-blue-600/40 transition-all flex-shrink-0">
+                        <i class="fab fa-facebook text-lg sm:text-xl md:text-2xl text-blue-400"></i>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-display font-bold mb-1">Facebook</h4>
-                        <p class="text-gray-400">facebook.com/Zackyplays</p>
+                    <div class="min-w-0">
+                        <h4 class="text-base sm:text-lg md:text-xl font-display font-bold mb-1">Facebook</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm">facebook.com/Zackyplays</p>
                     </div>
                 </a>
 
                 <!-- Instagram -->
-                <a href="https://www.instagram.com/shirakawa69/" target="_blank" class="glass-card p-8 rounded-2xl flex items-center gap-6 hover:bg-white/5 transition-all group">
-                    <div class="w-16 h-16 rounded-full bg-pink-600/20 flex items-center justify-center group-hover:bg-pink-600/40 transition-all">
-                        <i class="fab fa-instagram text-2xl text-pink-400"></i>
+                <a href="https://www.instagram.com/shirakawa69/" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
+                    <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-pink-600/20 flex items-center justify-center group-hover:bg-pink-600/40 transition-all flex-shrink-0">
+                        <i class="fab fa-instagram text-lg sm:text-xl md:text-2xl text-pink-400"></i>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-display font-bold mb-1">Instagram</h4>
-                        <p class="text-gray-400">instagram.com/shirakawa69</p>
+                    <div class="min-w-0">
+                        <h4 class="text-base sm:text-lg md:text-xl font-display font-bold mb-1">Instagram</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm">instagram.com/shirakawa69</p>
                     </div>
                 </a>
             </div>
 
             <!-- Resume Section -->
-            <div class="mt-12">
-                <div class="glass-card p-8 rounded-2xl">
-                    <h4 class="text-2xl font-display font-bold mb-6 text-center">My Resume</h4>
+            <div class="mt-8 sm:mt-10 md:mt-12">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                    <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6 text-center">My Resume</h4>
                     <div class="flex justify-center">
-                        <button onclick="openResumeModal()" class="magnetic-btn px-8 py-4 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center gap-2">
+                        <button onclick="openResumeModal()" class="magnetic-btn px-6 sm:px-8 py-3 sm:py-4 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center">
                             <i class="fas fa-file-download"></i>
                             View Resume
                         </button>
@@ -734,12 +734,12 @@
         </div>
     </section>
 
-    <footer class="py-12 px-6 border-t border-white/10">
+    <footer class="py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 border-t border-white/10">
         <div class="max-w-7xl mx-auto text-center">
-            <div class="text-2xl font-display font-bold tracking-tighter">
+            <div class="text-xl sm:text-2xl md:text-3xl font-display font-bold tracking-tighter">
                 ZACK<span class="text-indigo-500">.</span>REFREA
             </div>
-            <div class="text-gray-500 text-sm mt-4">
+            <div class="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4">
                 © 2026 All rights reserved. Made with passion.
             </div>
         </div>
