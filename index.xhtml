@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" type="text/css" />
     
     <script type="text/javascript">
-    //<![CDATA[
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -41,11 +40,9 @@
                 }
             }
         }
-    //]]>
     </script>
 
     <style type="text/css">
-        /* Dark Mode (Default) */
         body {
             background-color: #0a0a0a;
             color: #ffffff;
@@ -64,7 +61,6 @@
             -webkit-backdrop-filter: blur(12px);
         }
         
-        /* Light Mode */
         body.light-mode {
             background-color: #f5f5f5;
             color: #1a1a1a;
@@ -179,7 +175,6 @@
             transform: translateY(-3px);
         }
 
-        /* Hamburger Animation */
         #hamburgerBtn {
             display: flex;
             flex-direction: column;
@@ -214,7 +209,6 @@
             transform: rotate(-45deg) translate(7px, -7px);
         }
 
-        /* Mobile Menu Light Mode */
         body.light-mode #mobileMenu {
             background: linear-gradient(to bottom, #e0d5ff, #f3f4f6, #f5f5f5);
         }
@@ -237,7 +231,6 @@
             color: #ffffff;
         }
 
-        /* Image Modal */
         .image-modal {
             display: none;
             position: fixed;
@@ -297,7 +290,6 @@
         .modal-prev { left: 20px; }
         .modal-next { right: 20px; }
 
-        /* Resume Modal */
         .resume-modal {
             display: none;
             position: fixed;
@@ -376,7 +368,6 @@
                 <a href="#family" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Family</a>
                 <a href="#anime" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">anime</a>
                 <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
-                <!-- Light Mode Toggle -->
                 <button id="themeToggle" class="text-sm font-medium text-gray-300 hover:text-white transition-colors" onclick="toggleTheme()">
                     <i class="fas fa-moon" id="themeIcon"></i>
                 </button>
@@ -732,7 +723,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-                <!-- Email -->
                 <a href="mailto:zackroberteileen@gmail.com" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
                     <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-indigo-600/20 flex items-center justify-center group-hover:bg-indigo-600/40 transition-all flex-shrink-0">
                         <i class="fas fa-envelope text-lg sm:text-xl md:text-2xl text-indigo-400"></i>
@@ -743,7 +733,6 @@
                     </div>
                 </a>
 
-                <!-- GitHub -->
                 <a href="https://github.com/Shirakawa69" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
                     <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-gray-800/50 flex items-center justify-center group-hover:bg-gray-800 transition-all flex-shrink-0">
                         <i class="fab fa-github text-lg sm:text-xl md:text-2xl text-white"></i>
@@ -754,7 +743,6 @@
                     </div>
                 </a>
 
-                <!-- Facebook -->
                 <a href="https://www.facebook.com/Zackyplays" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
                     <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-blue-600/20 flex items-center justify-center group-hover:bg-blue-600/40 transition-all flex-shrink-0">
                         <i class="fab fa-facebook text-lg sm:text-xl md:text-2xl text-blue-400"></i>
@@ -765,7 +753,6 @@
                     </div>
                 </a>
 
-                <!-- Instagram -->
                 <a href="https://www.instagram.com/shirakawa69/" target="_blank" class="glass-card p-4 sm:p-6 md:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:bg-white/5 transition-all group">
                     <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-pink-600/20 flex items-center justify-center group-hover:bg-pink-600/40 transition-all flex-shrink-0">
                         <i class="fab fa-instagram text-lg sm:text-xl md:text-2xl text-pink-400"></i>
@@ -777,7 +764,6 @@
                 </a>
             </div>
 
-            <!-- Resume Section -->
             <div class="mt-8 sm:mt-10 md:mt-12">
                 <div class="glass-card p-6 sm:p-8 rounded-2xl">
                     <h4 class="text-xl sm:text-2xl font-display font-bold mb-4 sm:mb-6 text-center">My Resume</h4>
@@ -803,12 +789,10 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Image Modal -->
     <div id="imageModal" class="image-modal" onclick="closeImageModal(event)">
         <span class="modal-close" onclick="closeImageModal(event)">×</span>
         <span class="modal-nav modal-prev" onclick="navigateImage(-1)">&#10094;</span>
@@ -816,7 +800,6 @@
         <span class="modal-nav modal-next" onclick="navigateImage(1)">&#10095;</span>
     </div>
 
-    <!-- Resume Modal -->
     <div id="resumeModal" class="resume-modal" onclick="closeResumeModal(event)">
         <div class="resume-modal-content">
         <span class="modal-close" onclick="closeResumeModal(event)">×</span>
@@ -825,10 +808,8 @@
     </div>
 
     <script type="text/javascript">
-    //<![CDATA[
         gsap.registerPlugin(ScrollTrigger);
 
-        // Image Modal Functionality
         var allImages = [];
         var currentImageIndex = 0;
 
@@ -836,7 +817,6 @@
             var modal = document.getElementById('imageModal');
             var modalImg = document.getElementById('modalImage');
             
-            // Collect all clickable images
             allImages = Array.from(document.querySelectorAll('[onclick="openImageModal(this)"]')).map(function(img) {
                 return img.src;
             });
@@ -863,7 +843,6 @@
             document.getElementById('modalImage').src = allImages[currentImageIndex];
         }
 
-        // Resume Modal Functionality
         function openResumeModal() {
             document.getElementById('resumeModal').classList.add('active');
             document.body.style.overflow = 'hidden';
@@ -876,7 +855,6 @@
             }
         }
 
-        // Theme Toggle
         function toggleTheme() {
             var body = document.body;
             var themeIcon = document.getElementById('themeIcon');
@@ -893,7 +871,6 @@
             }
         }
 
-        // Cursor Glow
         var cursorGlow = document.getElementById('cursorGlow');
         document.addEventListener('mousemove', function(e) {
             if (cursorGlow) {
@@ -902,7 +879,6 @@
             }
         });
 
-        // Mobile Menu
         function toggleMenu() {
             var menu = document.getElementById('mobileMenu');
             var hamburger = document.getElementById('hamburgerBtn');
@@ -911,12 +887,10 @@
             hamburger.classList.toggle('open');
         }
 
-        // Scroll to Top
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Back to top button visibility
         window.addEventListener('scroll', function() {
             var backToTopBtn = document.getElementById('backToTop');
             if (window.scrollY > 300) {
@@ -926,7 +900,6 @@
             }
         });
 
-        // Magnetic Buttons
         var magneticBtns = document.querySelectorAll('.magnetic-btn');
         magneticBtns.forEach(function(btn) {
             btn.addEventListener('mousemove', function(e) {
@@ -941,7 +914,6 @@
             });
         });
 
-        // GSAP Animations
         gsap.utils.toArray('.glass-card').forEach(function(card, i) {
             gsap.from(card, {
                 scrollTrigger: { trigger: card, start: 'top 85%' },
@@ -956,7 +928,6 @@
             });
         });
 
-        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -967,7 +938,6 @@
             });
         });
 
-        // Profile Slideshow
         var profileImages = ['pic/Profilepic.jpg', 'pic/profilepic3.jpg'];
         var currentIndex = 0;
         var profileImg = document.getElementById('profileSlideshow');
@@ -978,7 +948,6 @@
             }, 3000);
         }
 
-        // Keyboard navigation for modals
         document.addEventListener('keydown', function(e) {
             if (document.getElementById('imageModal').classList.contains('active')) {
                 if (e.key === 'ArrowLeft') navigateImage(-1);
@@ -989,7 +958,6 @@
                 if (e.key === 'Escape') closeResumeModal({ target: document.getElementById('resumeModal') });
             }
         });
-    //]]>
     </script>
 </body>
 </html>
