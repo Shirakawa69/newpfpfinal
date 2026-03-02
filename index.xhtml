@@ -179,6 +179,64 @@
             transform: translateY(-3px);
         }
 
+        /* Hamburger Animation */
+        #hamburgerBtn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .hamburger-line {
+            width: 25px;
+            height: 2.5px;
+            background-color: #6366f1;
+            margin: 4px 0;
+            transition: all 0.3s ease;
+        }
+
+        body.light-mode .hamburger-line {
+            background-color: #1a1a1a;
+        }
+
+        #hamburgerBtn.open .line1 {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        #hamburgerBtn.open .line2 {
+            opacity: 0;
+        }
+
+        #hamburgerBtn.open .line3 {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Menu Light Mode */
+        body.light-mode #mobileMenu {
+            background: linear-gradient(to bottom, #e0d5ff, #f3f4f6, #f5f5f5);
+        }
+
+        body.light-mode #mobileMenu a,
+        body.light-mode #mobileMenu button {
+            color: #1a1a1a !important;
+        }
+
+        body.light-mode #mobileMenu a:hover,
+        body.light-mode #mobileMenu button:hover {
+            color: #6366f1 !important;
+        }
+
+        #mobileMenu a {
+            color: #ffffff;
+        }
+
+        #mobileMenu button {
+            color: #ffffff;
+        }
+
         /* Image Modal */
         .image-modal {
             display: none;
@@ -324,22 +382,22 @@
                 </button>
             </div>
 
-            <button class="md:hidden text-white" onclick="toggleMenu()">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
+            <button id="hamburgerBtn" class="md:hidden" onclick="toggleMenu()">
+                <div class="hamburger-line line1"></div>
+                <div class="hamburger-line line2"></div>
+                <div class="hamburger-line line3"></div>
             </button>
         </div>
     </nav>
 
-    <div id="mobileMenu" class="fixed inset-0 bg-black z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center gap-8">
-        <a href="#about" onclick="toggleMenu()" class="text-2xl font-display font-bold">About</a>
-        <a href="#skills" onclick="toggleMenu()" class="text-2xl font-display font-bold">Skills</a>
-        <a href="#work" onclick="toggleMenu()" class="text-2xl font-display font-bold">Work</a>
-        <a href="#family" onclick="toggleMenu()" class="text-2xl font-display font-bold">Family</a>
-        <a href="#anime" onclick="toggleMenu()" class="text-2xl font-display font-bold">Anime</a>
-        <a href="#contact" onclick="toggleMenu()" class="text-2xl font-display font-bold">Contact</a>
-        <button onclick="toggleTheme()" class="text-2xl font-display font-bold">
+    <div id="mobileMenu" class="fixed inset-0 bg-gradient-to-b from-indigo-950 via-gray-950 to-black z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center gap-8">
+        <a href="#about" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">About</a>
+        <a href="#skills" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">Skills</a>
+        <a href="#work" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">Work</a>
+        <a href="#family" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">Family</a>
+        <a href="#anime" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">Anime</a>
+        <a href="#contact" onclick="toggleMenu()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">Contact</a>
+        <button onclick="toggleTheme()" class="text-2xl font-display font-bold text-white hover:text-indigo-300 transition-colors">
             <i class="fas fa-moon" id="mobileThemeIcon"></i> Light Mode
         </button>
     </div>
@@ -847,7 +905,10 @@
         // Mobile Menu
         function toggleMenu() {
             var menu = document.getElementById('mobileMenu');
+            var hamburger = document.getElementById('hamburgerBtn');
+            menu.classList.toggle('translate-x-0');
             menu.classList.toggle('translate-x-full');
+            hamburger.classList.toggle('open');
         }
 
         // Scroll to Top
